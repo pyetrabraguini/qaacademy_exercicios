@@ -14,10 +14,26 @@ public class Execucao {
         // System.out.println(exercicio03.retornaTrocado(valorUm, valorDois));
 
         
-        String numeroDigitadoUsuario = JOptionPane.showInputDialog("Digite um número");
-        int numeroDigitado = Integer.parseInt(numeroDigitadoUsuario);
-        Exercicio04 exercicio04 = new Exercicio04();
-        System.out.println("O dobro de " +numeroDigitado +" = " +exercicio04.calcularDobro(numeroDigitado));
+        // String numeroDigitadoUsuario = JOptionPane.showInputDialog("Digite um número");
+        // int numeroDigitado = Integer.parseInt(numeroDigitadoUsuario);
+        // Exercicio04 exercicio04 = new Exercicio04();
+        // System.out.println("O dobro de " +numeroDigitado +" = " +exercicio04.calcularDobro(numeroDigitado));
+
+        String numero1String = JOptionPane.showInputDialog("Digite o primeiro número");
+        String numero2String = JOptionPane.showInputDialog("Digite o segundo número");
+        String numero3String = JOptionPane.showInputDialog("Digite o terceiro número");
+
+        int numero1 = Integer.parseInt(numero1String);
+        int numero2 = Integer.parseInt(numero2String);
+        int numero3 = Integer.parseInt(numero3String);
+
+        Exercicio05 exercicio05 = new Exercicio05();
+       System.out.println("A soma dos números é: " +exercicio05.soma(numero1, numero2, numero3));
+       System.out.println("A subtração é: " +exercicio05.subtracao(numero1, numero2, numero3));
+       System.out.println("A multiplicação é: " +exercicio05.multiplicacao(numero1, numero2, numero3));
+       int soma = exercicio05.soma(numero1, numero2, numero3);
+       System.out.println("A média é: " +exercicio05.media(soma));
+
     }
     
 }
