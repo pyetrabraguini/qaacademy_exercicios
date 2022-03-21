@@ -19,21 +19,32 @@ public class Execucao {
         // Exercicio04 exercicio04 = new Exercicio04();
         // System.out.println("O dobro de " +numeroDigitado +" = " +exercicio04.calcularDobro(numeroDigitado));
 
-        String numero1String = JOptionPane.showInputDialog("Digite o primeiro número");
-        String numero2String = JOptionPane.showInputDialog("Digite o segundo número");
-        String numero3String = JOptionPane.showInputDialog("Digite o terceiro número");
+    //     String numero1String = JOptionPane.showInputDialog("Digite o primeiro número");
+    //     String numero2String = JOptionPane.showInputDialog("Digite o segundo número");
+    //     String numero3String = JOptionPane.showInputDialog("Digite o terceiro número");
 
-        int numero1 = Integer.parseInt(numero1String);
-        int numero2 = Integer.parseInt(numero2String);
-        int numero3 = Integer.parseInt(numero3String);
+    //     int numero1 = Integer.parseInt(numero1String);
+    //     int numero2 = Integer.parseInt(numero2String);
+    //     int numero3 = Integer.parseInt(numero3String);
 
-        Exercicio05 exercicio05 = new Exercicio05();
-       System.out.println("A soma dos números é: " +exercicio05.soma(numero1, numero2, numero3));
-       System.out.println("A subtração é: " +exercicio05.subtracao(numero1, numero2, numero3));
-       System.out.println("A multiplicação é: " +exercicio05.multiplicacao(numero1, numero2, numero3));
-       int soma = exercicio05.soma(numero1, numero2, numero3);
-       System.out.println("A média é: " +exercicio05.media(soma));
+    //     Exercicio05 exercicio05 = new Exercicio05();
+    //    System.out.println("A soma dos números é: " +exercicio05.soma(numero1, numero2, numero3));
+    //    System.out.println("A subtração é: " +exercicio05.subtracao(numero1, numero2, numero3));
+    //    System.out.println("A multiplicação é: " +exercicio05.multiplicacao(numero1, numero2, numero3));
+    //    int soma = exercicio05.soma(numero1, numero2, numero3);
+    //    System.out.println("A média é: " +exercicio05.media(soma));
 
+
+        String nota1String, nota2String;
+        nota1String = JOptionPane.showInputDialog("Digite a primeira nota");
+        nota2String = JOptionPane.showInputDialog("Digite a segunda nota");
+
+        double nota1 = Double.parseDouble(nota1String);
+        double nota2 = Double.parseDouble(nota2String);
+
+        Exercicio06 exercicio06 = new Exercicio06();
+        System.out.println(exercicio06.verificarAprovacao(nota1, nota2));
+        
     }
     
 }
