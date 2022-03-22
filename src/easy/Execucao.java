@@ -57,11 +57,20 @@ public class Execucao {
         // Exercicio08 exercicio08 = new Exercicio08();
         // System.out.println(exercicio08.calcularImposto(salario));
 
-        String numeroDigitadoStg = JOptionPane.showInputDialog("Digite um número para calcular a tabuada");
-        int numeroDigitado = Integer.parseInt(numeroDigitadoStg);
-        Exercicio09 exercicio09 = new Exercicio09();
-       exercicio09.calcularTabuada(numeroDigitado);
+        // String numeroDigitadoStg = JOptionPane.showInputDialog("Digite um número para calcular a tabuada");
+        // int numeroDigitado = Integer.parseInt(numeroDigitadoStg);
+        // Exercicio09 exercicio09 = new Exercicio09();
+        // exercicio09.calcularTabuada(numeroDigitado);
         
+        Double valorTotal, valorInvestimento, valorJuros;
+        valorInvestimento = Double.parseDouble(JOptionPane.showInputDialog("Digite o valor investido"));
+        Exercicio10 exercicio10 = new Exercicio10();
+        valorJuros = exercicio10.calcularValorJuros(valorInvestimento);
+        valorTotal = valorInvestimento + valorJuros;
+
+        System.out.println("Você investiu: R$ " +valorInvestimento);
+        System.out.println("Você rendeu: R$ " +valorJuros  + " de Juros");
+        System.out.println("O valor total são: R$ " +valorTotal);
     }
     
 }

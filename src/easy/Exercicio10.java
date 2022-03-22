@@ -3,25 +3,25 @@ package easy;
 import javax.swing.JOptionPane;
 
 public class Exercicio10 {
-    public static void main(String[] args) {
+    public double calcularValorJuros(Double valorInvestimento) {
+        double taxaJuros = 0.05, valorJuros = 0.0, ano = 1;
+        valorInvestimento = 1000.00;
 
-        double valorInvestimento, taxaJuros = 0.05, valorJuros = 0, valorTotal;
-        int i = 1;
-
-        String valorinvestimentoStg = JOptionPane.showInputDialog("Digite o valor investido");
-        valorInvestimento = Double.parseDouble(valorinvestimentoStg);
+        // String valorinvestimentoStg = JOptionPane.showInputDialog("Digite o valor investido");
+        // valorInvestimento = Double.parseDouble(valorinvestimentoStg);
 
 
-        while (i <= 10) {
-            valorJuros = (valorJuros+valorInvestimento) * taxaJuros;
-            i++;
+        while (ano <= 10) {
+            valorJuros = valorJuros + (valorInvestimento * taxaJuros);
+            ano++;
         }
 
-        valorTotal = valorJuros + valorInvestimento;
+        // valorTotal = valorJuros + valorInvestimento;
 
-        System.out.println("Você investiu: " +valorInvestimento);
-        System.out.println("Você rendeu: " +valorJuros  + "de Juros");
-        System.out.println("O valor total são: " +valorTotal);
+        // System.out.println("Você investiu: " +valorInvestimento);
+        // System.out.println("Você rendeu: " +valorJuros  + "de Juros");
+        // System.out.println("O valor total são: " +valorTotal);
+        return valorJuros;
 
     }
     
