@@ -35,15 +35,21 @@ public class Execucao {
     //    System.out.println("A média é: " +exercicio05.media(soma));
 
 
-        String nota1String, nota2String;
-        nota1String = JOptionPane.showInputDialog("Digite a primeira nota");
-        nota2String = JOptionPane.showInputDialog("Digite a segunda nota");
+        // String nota1String, nota2String;
+        // nota1String = JOptionPane.showInputDialog("Digite a primeira nota");
+        // nota2String = JOptionPane.showInputDialog("Digite a segunda nota");
 
-        double nota1 = Double.parseDouble(nota1String);
-        double nota2 = Double.parseDouble(nota2String);
+        // double nota1 = Double.parseDouble(nota1String);
+        // double nota2 = Double.parseDouble(nota2String);
 
-        Exercicio06 exercicio06 = new Exercicio06();
-        System.out.println(exercicio06.verificarAprovacao(nota1, nota2));
+        // Exercicio06 exercicio06 = new Exercicio06();
+        // System.out.println(exercicio06.verificarAprovacao(nota1, nota2));
+
+        String salarioString;
+        salarioString = JOptionPane.showInputDialog("Digite o salário");
+        double salario = Double.parseDouble(salarioString);
+        Exercicio07 exercicio07 = new Exercicio07();
+        System.out.println(exercicio07.calcularInss(salario));
         
     }
     
