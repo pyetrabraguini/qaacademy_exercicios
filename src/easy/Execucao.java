@@ -45,11 +45,17 @@ public class Execucao {
         // Exercicio06 exercicio06 = new Exercicio06();
         // System.out.println(exercicio06.verificarAprovacao(nota1, nota2));
 
+        // String salarioString;
+        // salarioString = JOptionPane.showInputDialog("Digite o salário");
+        // double salario = Double.parseDouble(salarioString);
+        // Exercicio07 exercicio07 = new Exercicio07();
+        // System.out.println(exercicio07.calcularInss(salario));
+
         String salarioString;
         salarioString = JOptionPane.showInputDialog("Digite o salário");
         double salario = Double.parseDouble(salarioString);
-        Exercicio07 exercicio07 = new Exercicio07();
-        System.out.println(exercicio07.calcularInss(salario));
+        Exercicio08 exercicio08 = new Exercicio08();
+        System.out.println(exercicio08.calcularImposto(salario));
         
     }
     
