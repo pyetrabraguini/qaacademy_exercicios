@@ -1,22 +1,14 @@
 package easy;
 
-import javax.swing.JOptionPane;
-
 public class Exercicio09 {
-    public static void main(String[] args) {
-
-        int numeroDigitado, i = 1;
-
-        String numeroDigitadoStg = JOptionPane.showInputDialog("Digite um número para calcular a tabuada");
-        numeroDigitado = Integer.parseInt(numeroDigitadoStg);
+    public void calcularTabuada(Integer numeroDigitado) {
+        int i = 1, tabuada;
 
         while (i <= 10) {
-            System.out.println(numeroDigitado * i);
-            i++;
-        }
-
-    
-      
+            tabuada = numeroDigitado * i;
+           System.out.println(numeroDigitado + " X " + i + " = " + tabuada);
+            i++;       
+        }    
         
     }
 }

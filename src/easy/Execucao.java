@@ -51,11 +51,16 @@ public class Execucao {
         // Exercicio07 exercicio07 = new Exercicio07();
         // System.out.println(exercicio07.calcularInss(salario));
 
-        String salarioString;
-        salarioString = JOptionPane.showInputDialog("Digite o salário");
-        double salario = Double.parseDouble(salarioString);
-        Exercicio08 exercicio08 = new Exercicio08();
-        System.out.println(exercicio08.calcularImposto(salario));
+        // String salarioString;
+        // salarioString = JOptionPane.showInputDialog("Digite o salário");
+        // double salario = Double.parseDouble(salarioString);
+        // Exercicio08 exercicio08 = new Exercicio08();
+        // System.out.println(exercicio08.calcularImposto(salario));
+
+        String numeroDigitadoStg = JOptionPane.showInputDialog("Digite um número para calcular a tabuada");
+        int numeroDigitado = Integer.parseInt(numeroDigitadoStg);
+        Exercicio09 exercicio09 = new Exercicio09();
+       exercicio09.calcularTabuada(numeroDigitado);
         
     }
     
