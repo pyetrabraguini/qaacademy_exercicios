@@ -62,15 +62,21 @@ public class Execucao {
         // Exercicio09 exercicio09 = new Exercicio09();
         // exercicio09.calcularTabuada(numeroDigitado);
         
-        Double valorTotal, valorInvestimento, valorJuros;
-        valorInvestimento = Double.parseDouble(JOptionPane.showInputDialog("Digite o valor investido"));
-        Exercicio10 exercicio10 = new Exercicio10();
-        valorJuros = exercicio10.calcularValorJuros(valorInvestimento);
-        valorTotal = valorInvestimento + valorJuros;
+        // Double valorTotal, valorInvestimento, valorJuros;
+        // valorInvestimento = Double.parseDouble(JOptionPane.showInputDialog("Digite o valor investido"));
+        // Exercicio10 exercicio10 = new Exercicio10();
+        // valorJuros = exercicio10.calcularValorJuros(valorInvestimento);
+        // valorTotal = valorInvestimento + valorJuros;
 
-        System.out.println("Você investiu: R$ " +valorInvestimento);
-        System.out.println("Você rendeu: R$ " +valorJuros  + " de Juros");
-        System.out.println("O valor total são: R$ " +valorTotal);
+        // System.out.println("Você investiu: R$ " +valorInvestimento);
+        // System.out.println("Você rendeu: R$ " +valorJuros  + " de Juros");
+        // System.out.println("O valor total são: R$ " +valorTotal);
+
+        String digitadoNumeroString = JOptionPane.showInputDialog("Digite um número para calcular a soma");
+        int digitadoNumero = Integer.parseInt(digitadoNumeroString);
+        Exercicio11 exercicio11 = new Exercicio11();
+        exercicio11.calcularSoma(digitadoNumero);
+
     }
     
 }

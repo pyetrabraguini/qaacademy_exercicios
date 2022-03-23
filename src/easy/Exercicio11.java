@@ -1,26 +1,19 @@
 package easy;
 
-import javax.swing.JOptionPane;
-
 public class Exercicio11 {
-    public static void main(String[] args) {
-        
-        
-        int numeroDigitado, i = 1, soma;
+    public void calcularSoma(int digitadoNumero) {
+        int i = 1, soma;
 
-        String numeroDigitadoStg = JOptionPane.showInputDialog("Digite um número");
-        numeroDigitado = Integer.parseInt(numeroDigitadoStg);
+        // String numeroDigitadoStg = JOptionPane.showInputDialog("Digite um número");
+        // numeroDigitado = Integer.parseInt(numeroDigitadoStg);
 
-
-        soma = numeroDigitado;
+        soma = digitadoNumero;
         while (i <= 100) {
             soma = soma + 2;
-
             System.out.println("A soma é: " +soma);
             i++;
         }
         
-
     }
     
 }
