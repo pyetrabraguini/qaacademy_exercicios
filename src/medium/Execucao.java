@@ -27,13 +27,15 @@ public class Execucao {
         // Exercicio04 exercicio04 = new Exercicio04();
         // exibirVetor(exercicio04.multiplicaAteMil());
 
-        int[] vetorNumeros = { 5, 4, 8, 1, 2 }; // Cria o vetorEpreenche os valores
-        Exercicio05 exercicio05 = new Exercicio05();
-        System.out.println(exercicio05.verificaMenorValor(vetorNumeros));
+        // int[] vetorNumeros = { 5, 4, 8, 1, 2 }; // Cria o vetorEpreenche os valores
+        // Exercicio05 exercicio05 = new Exercicio05();
+        // System.out.println(exercicio05.verificaMenorValor(vetorNumeros));
 
+        Exercicio06 exercicio06 = new Exercicio06();
+        System.out.println(exercicio06.calculaFatorial(5));
 
     }
-    
+
     public static void exibirVetor(int[] vetorParaImprimir) {
         int i = 0;
         while (i < vetorParaImprimir.length) {
