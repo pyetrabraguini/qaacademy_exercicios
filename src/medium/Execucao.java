@@ -37,11 +37,15 @@ public class Execucao {
         // Exercicio07 exercicio07 = new Exercicio07();
         // exibirVetor(exercicio07.preencheVetorMeses());
 
-        String [] vetorAlunos = {"Flavio", "Reinaldo", "Samuel", "Edmond", "Pedro"}; 
-        int [] vetorNumeroAlunos = {1,2,3,4,5}; 
+        // String [] vetorAlunos = {"Flavio", "Reinaldo", "Samuel", "Edmond", "Pedro"}; 
+        // int [] vetorNumeroAlunos = {1,2,3,4,5}; 
 
-        Exercicio09 exercicio09 = new Exercicio09(); 
-        exercicio09.exibeAlunosENumeros(vetorAlunos,vetorNumeroAlunos);
+        // Exercicio09 exercicio09 = new Exercicio09(); 
+        // exercicio09.exibeAlunosENumeros(vetorAlunos,vetorNumeroAlunos);
+
+        Exercicio10 exercicio10 = new Exercicio10();
+        System.out.println("Exibe o valor do termo: " + exercicio10.calcularFibonacci(10));
+        exibirVetor(exercicio10.calcularFibonacciVetor(10));
 
     }
 
