@@ -24,18 +24,23 @@ public class Execucao {
         // System.out.println(exercicio03.somaAteMil());
 
         // Exercicio04
-        Exercicio04 exercicio04 = new Exercicio04();
-        exibirVetor(exercicio04.multiplicaAteMil());
+        // Exercicio04 exercicio04 = new Exercicio04();
+        // exibirVetor(exercicio04.multiplicaAteMil());
+
+        int[] vetorNumeros = { 5, 4, 8, 1, 2 }; // Cria o vetorEpreenche os valores
+        Exercicio05 exercicio05 = new Exercicio05();
+        System.out.println(exercicio05.verificaMenorValor(vetorNumeros));
 
 
     }
-
+    
     public static void exibirVetor(int[] vetorParaImprimir) {
         int i = 0;
-        while (i < vetorParaImprimir.length){
+        while (i < vetorParaImprimir.length) {
             System.out.println(vetorParaImprimir[i]);
             i++;
         }
     }
+
     
 }
