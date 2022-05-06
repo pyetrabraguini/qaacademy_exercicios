@@ -1,28 +1,19 @@
 package medium;
 
-import javax.swing.JOptionPane;
-
 public class Exercicio02 {
-    public static void main(String[] args) {
+    public double calcularInvestimentoJurosCompostos(double valorInvestimento) {
 
-        double valorInvestimento, taxaJuros = 0.05, valorJuros, valorTotal;
-        int i = 1;
+        double taxaJuros = 0.05, totalAtualizadoComJuros;
+        int ano = 1, tempoInvestido = 10;
+        totalAtualizadoComJuros = valorInvestimento;
 
-        String valorInvestimentoStg = JOptionPane.showInputDialog("Digite o valor investido");
-        valorInvestimento = Double.parseDouble(valorInvestimentoStg);
-        valorTotal = valorInvestimento;
-
-
-        while (i <= 10) {
-            valorTotal = (valorTotal*taxaJuros) +valorTotal;
-            i++;
+        while (ano <= tempoInvestido) {
+            totalAtualizadoComJuros = 
+            (totalAtualizadoComJuros * taxaJuros) + totalAtualizadoComJuros;
+            ano++;
         }
+        return totalAtualizadoComJuros - valorInvestimento;
 
-        valorJuros = valorTotal - valorInvestimento;
-
-        System.out.println("Você investiu : " +valorInvestimento);
-        System.out.print("Rendeu: " +valorJuros +" de juros");
-        System.out.println("O valor total são: " +valorTotal);
     }
     
 }
