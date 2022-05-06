@@ -20,11 +20,22 @@ public class Execucao {
         // System.out.println("O valor total do investimento: "+ (valorJuros + valorInvestimento));
 
         // Exercicio 03
-        Exercicio03 exercicio03 = new Exercicio03(); 
-        System.out.println(exercicio03.somaAteMil());
+        // Exercicio03 exercicio03 = new Exercicio03(); 
+        // System.out.println(exercicio03.somaAteMil());
+
+        // Exercicio04
+        Exercicio04 exercicio04 = new Exercicio04();
+        exibirVetor(exercicio04.multiplicaAteMil());
 
 
+    }
 
+    public static void exibirVetor(int[] vetorParaImprimir) {
+        int i = 0;
+        while (i < vetorParaImprimir.length){
+            System.out.println(vetorParaImprimir[i]);
+            i++;
+        }
     }
     
 }
